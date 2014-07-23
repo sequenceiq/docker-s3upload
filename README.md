@@ -3,7 +3,15 @@ docker-s3upload
 
 Run with:
 ```
-docker run -rm -v $FOLDER/:/home/ubuntu/backups/ -v /etc/localtime:/etc/localtime -e "AWS_ACCESS_KEY_ID=$aws_access_key_id" -e "AWS_SECRET_ACCESS_KEY=$aws_secret_access_key" -e "BUCKET=$BUCKET" -e "FOLDER=/home/ubuntu/backups" -e "FILE_NAME=$FILE_NAME"  s3up
+docker run -rm 
+-v $FOLDER/:/home/ubuntu/backups/ 
+-v /etc/localtime:/etc/localtime 
+-e "AWS_ACCESS_KEY_ID=$aws_access_key_id" 
+-e "AWS_SECRET_ACCESS_KEY=$aws_secret_access_key" 
+-e "BUCKET=$BUCKET" 
+-e "FOLDER=/home/ubuntu/backups" 
+-e "FILE_NAME=$FILE_NAME"  
+imagename
 ```
 
 | KEY  | value  | mandatory | description |
