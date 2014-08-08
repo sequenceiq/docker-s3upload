@@ -4,7 +4,8 @@ docker-s3upload
 To upload a file to S3 run:
 
 ```
-docker run --rm \
+docker run \
+  --rm \
   --name cbdata \
   -v $FOLDER/:/home/ubuntu/backups/ \
   -v /etc/localtime:/etc/localtime  \
@@ -33,7 +34,7 @@ Where:
 To download a tar and unpack it in the target folder run:
 
 ```
-docker run -it \
+docker run -t \
   --name cbdata \
   -v $FOLDER \
   -e "AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" \
