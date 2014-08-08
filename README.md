@@ -55,4 +55,5 @@ imagename \
 | FILE_NAME             | test.tar                    | yes       | the file name of the snapshot to be downloaded         |
 | BUCKET                | your-bucket                 | yes       | the bucket name the snapshot resides in                |
 
-After the snapshot is downloaded into the specified volume, it can be used by another container as  "Data volume"
+
+After the snapshot is downloaded into the specified volume, it can be used by another container as  a "data volume"
