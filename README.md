@@ -4,9 +4,10 @@ docker-s3upload
 To upload a file to S3 run:
 
 ```
-docker run -it \
+docker run --rm \
   --name cbdata \
-  -v $FOLDER \
+  -v $FOLDER/:/home/ubuntu/backups/ \
+  -v /etc/localtime:/etc/localtime  \
   -e "AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" \
   -e "AWS_SECRET_ACCESS_KEY=$AWS_SECRET_KEY" \
   -e "AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION" \
