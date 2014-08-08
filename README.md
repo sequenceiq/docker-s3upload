@@ -18,8 +18,9 @@ imagename \
 
 Where:
 
+
 | KEY                   | value                       | mandatory | description                                            |
-|:--------------------- |:---------------------------:|:---------:|:----------------------------------------------------- :|
+|:----------------------|:---------------------------:|:---------:|:----------------------------------------------------- :|
 | FOLDER                | /backup                     | yes       | the foldercontaining files to upload                   |
 | AWS_ACCESS_KEY_ID     | 123456                      | yes       | your aws access key                                    |
 | AWS_SECRET_ACCESS_KEY | xcdfjkhfkjwehwfpoewufpo324  | yes       | your aws secret key                                    |
@@ -44,7 +45,7 @@ imagename \
 ```
 
 | KEY                   | value                       | mandatory | description                                            |
-|: -------------------- |:---------------------------:|:---------:|:----------------------------------------------------- :|
+|:----------------------|:---------------------------:|:---------:|:----------------------------------------------------- :|
 | FOLDER                | /backup                     | yes       | the volume (folder) the snapshot will be downloaded to |
 | AWS_ACCESS_KEY_ID     | 123456                      | yes       | your aws access key                                    |
 | AWS_SECRET_ACCESS_KEY | xcdfjkhfkjwehwfpoewufpo324  | yes       | your aws secret key                                    |
