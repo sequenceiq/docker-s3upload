@@ -6,7 +6,7 @@ MAINTAINER SequenceIq
 RUN apt-get update
 RUN apt-get -y install awscli
 
-ADD init.sh /etc/init.sh
-RUN chmod +x /etc/init.sh
+ADD snapshot.sh /etc/snapshot.sh
+RUN chmod +x /etc/snapshot.sh
 
-CMD "/etc/init.sh"
+ENTRYPOINT ["/etc/snapshot.sh"]
