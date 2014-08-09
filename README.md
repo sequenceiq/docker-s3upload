@@ -24,8 +24,8 @@ Where:
 | KEY                   | value                       | mandatory | description                                            |
 |-----------------------|-----------------------------|-----------|--------------------------------------------------------|
 | FOLDER                | /backup                     | yes       | the foldercontaining files to upload                   |
-| AWS_ACCESS_KEY_ID     | 123456                      | yes       | your aws access key                                    |
-| AWS_SECRET_ACCESS_KEY | xcdfjkhfkjwehwfpoewufpo324  | yes       | your aws secret key                                    |
+| AWS_ACCESS_KEY_ID     | 123456                      | yes       | your AWS access key                                    |
+| AWS_SECRET_ACCESS_KEY | xcdfjkhfkjwehwfpoewufpo324  | yes       | your AWS secret key                                    |
 | AWS_DEFAULT_REGION    | eu-west-1                   | yes       | the default AWS region to be used                      |
 | FILE_NAME             | test.tar                    | yes       | the name of the file to be uploaded                    |
 | BUCKET                | your-bucket                 | yes       | the bucket the file will be uploaded to                |
@@ -49,8 +49,8 @@ imagename \
 | KEY                   | value                       | mandatory | description                                            |
 |-----------------------|-----------------------------|-----------|--------------------------------------------------------|
 | FOLDER                | /backup                     | yes       | the volume (folder) the snapshot will be downloaded to |
-| AWS_ACCESS_KEY_ID     | 123456                      | yes       | your aws access key                                    |
-| AWS_SECRET_ACCESS_KEY | xcdfjkhfkjwehwfpoewufpo324  | yes       | your aws secret key                                    |
+| AWS_ACCESS_KEY_ID     | 123456                      | yes       | your AWS access key                                    |
+| AWS_SECRET_ACCESS_KEY | xcdfjkhfkjwehwfpoewufpo324  | yes       | your AWS secret key                                    |
 | AWS_DEFAULT_REGION    | eu-west-1                   | yes       | the default AWS region to be used                      |
 | FILE_NAME             | test.tar                    | yes       | the file name of the snapshot to be downloaded         |
 | BUCKET                | your-bucket                 | yes       | the bucket name the snapshot resides in                |
