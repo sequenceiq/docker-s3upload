@@ -4,7 +4,7 @@ docker-s3upload
 ###Build the image
 
 ```
-docker build  -t sequenceiq/s3-upload .
+docker build  -t sequenceiq/s3upload .
 ```
 
 ###Use the container
@@ -22,7 +22,7 @@ docker run
   -e "AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION" 
   -e "BUCKET=$BUCKET" 
   -e "FILE_NAME=$FILE_NAME" 
-sequenceiq/s3-upload 
+sequenceiq/s3upload 
   -c "put"
 ```
 
@@ -50,7 +50,7 @@ docker run -t
   -e "AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION" 
   -e "BUCKET=$BUCKET" 
   -e "FILE_NAME=$FILE_NAME" 
-sequenceiq/s3-upload 
+sequenceiq/s3upload 
   -c "get"
 ```
 
