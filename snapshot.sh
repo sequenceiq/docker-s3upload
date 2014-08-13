@@ -27,7 +27,7 @@ elif [ "$2" = "migrate" ]; then
   source /setup_liquibase.sh;
 
   echo "Updating database..."
-  liquibase --changeLogFile="/changelogs/cb_changelog.xml" updateSQL
+  liquibase --changeLogFile="/changelogs/cb_changelog.xml" update
   echo "Done."
 
 else
