@@ -19,15 +19,15 @@ elif [ "$2" = "get" ]; then
 elif [ "$2" = "migrate" ]; then
 
   echo "Getting liquibase changelogs"
-  aws s3 cp "s3://liquibase-changelogs/changelogs.tar" /tmp
+  aws s3 cp "s3://liquibase-changelogs/cloudbreak-changelogs.tar" /tmp
 
   echo "Unpacking changelogs"
-  tar -xf "/tmp/changelogs.tar" -C /
+  tar -xf "/tmp/cloudbreak-changelogs.tar" -C /
 
   source /setup_liquibase.sh;
 
   echo "Updating database..."
-  liquibase --changeLogFile="/changelogs/cb_changelog.xml" update
+  liquibase --changeLogFile="/cloudbreak-changelogs/cb_changelog.xml" update
   echo "Done."
 
 else
